@@ -60,7 +60,7 @@ numberButtons.forEach(button => {
         button.style.backgroundColor = 'red';
     })
     button.addEventListener('mouseout', () => {
-        button.style.backgroundColor = 'blueviolet';
+        button.style.backgroundColor = 'gainsboro';
     })
 });
 
@@ -75,7 +75,7 @@ operateButtons.forEach(button => {
         button.style.backgroundColor = 'red';
     })
     button.addEventListener('mouseout', () => {
-        button.style.backgroundColor = 'blueviolet';
+        button.style.backgroundColor = 'orange';
     })
 })
 
@@ -92,7 +92,7 @@ equalsButton.addEventListener('mouseover', () => {
     equalsButton.style.backgroundColor = 'red';
 })
 equalsButton.addEventListener('mouseout', () => {
-    equalsButton.style.backgroundColor = 'blueviolet';
+    equalsButton.style.backgroundColor = 'green';
 })
 
 let allClear = document.querySelector('#all-clear');
@@ -105,7 +105,7 @@ allClear.addEventListener('mouseover', () => {
     allClear.style.backgroundColor = 'red';
 })
 allClear.addEventListener('mouseout', () => {
-    allClear.style.backgroundColor = 'blueviolet';
+    allClear.style.backgroundColor = 'brown';
 })
 
 let clear = document.querySelector('#clear');
@@ -118,6 +118,6 @@ clear.addEventListener('mouseover', () => {
     clear.style.backgroundColor = 'red';
 })
 clear.addEventListener('mouseout', () => {
-    clear.style.backgroundColor = 'blueviolet';
+    clear.style.backgroundColor = 'brown';
 })
 

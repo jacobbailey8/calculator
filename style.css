@@ -9,27 +9,32 @@ body {
 }
 
 .entire-calculator {
-  background-color: white;
-  width: 600px;
-  height: 700px;
+  background-color: black;
+  width: 400px;
+  height: 600px;
   display: flex;
   flex-direction: column;
+  border-radius: 25px;
 }
 
 .top-portion {
-  height: 200px;
-  background-color: white;
+  height: 150px;
+  background-color: black;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-shrink: 1;
+  border-radius: 25px;
 }
 
 .display {
-  height: 150px;
-  width: 550px;
+  height: 100px;
+  width: 350px;
   background-color: rgb(194, 191, 191);
   border-radius: 25px;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-between; */
 }
 
 .bottom {
@@ -41,28 +46,24 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: blueviolet;
-  border: solid black 1px;
-  width: 150px;
-  height: 100px;
+  background-color: gainsboro;
+  border: solid;
+  width: 70px;
+  height: 70px;
   font-size: 36px;
+  border-radius: 50%;
 }
 
 .equals-button {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: blueviolet;
-  border: solid black 1px;
-  height: 100px;
-  width: 300px;
+  background-color: green;
+  border: solid;
+  height: 70px;
+  width: 159px;
   font-size: 36px;
-}
-
-.display {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  border-radius: 25px;
 }
 
 .content {
@@ -71,18 +72,31 @@ body {
   justify-content: flex-end;
   margin: 8px;
   margin-right: 12px;
-  font-size: 40px;
+  font-size: 35px;
+  padding-right: 10px;
+  padding-bottom: 35px;
 }
 
 .content-top {
   display: flex;
   justify-content: flex-end;
   font-size: 18px;
-  padding: 15px;
+  padding: 10px;
 }
 
+.row {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  height: 90px;
+  width: 400px;
+}
+
+.operator-button {
+  background-color: orange;
+}
+
+#clear,
 #all-clear {
-}
-
-#clear {
+  background-color: brown;
 }
