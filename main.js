@@ -42,6 +42,9 @@ function operate(a, b, operation){
     }
 }
 
+function entireOperate(arry) {
+
+}
 
 function displayMain(a) {
     disp1.textContent += a;
@@ -50,6 +53,10 @@ function display2(a) {
     disp2.textContent = a;
 }
 
+
+
+
+// number buttons
 let numberButtons = document.querySelectorAll('.number-button');
 
 numberButtons.forEach(button => {
@@ -57,13 +64,15 @@ numberButtons.forEach(button => {
         displayMain(button.textContent);
     });
     button.addEventListener('mouseover', () => {
-        button.style.backgroundColor = 'red';
+        button.style.backgroundColor = 'rgb(165, 158, 158)';
     })
     button.addEventListener('mouseout', () => {
         button.style.backgroundColor = 'gainsboro';
     })
 });
 
+
+// operate buttons
 let operateButtons = document.querySelectorAll('.operator-button');
 
 operateButtons.forEach(button => {
@@ -72,29 +81,46 @@ operateButtons.forEach(button => {
 
     })
     button.addEventListener('mouseover', () => {
-        button.style.backgroundColor = 'red';
+        button.style.backgroundColor = 'rgb(233, 203, 68)';
     })
     button.addEventListener('mouseout', () => {
         button.style.backgroundColor = 'orange';
     })
 })
 
+
+// equals buttons
 let equalsButton = document.querySelector('.equals-button');
 
 equalsButton.addEventListener('click', () => {
 
     display2(disp1.textContent + " = ");
     let calc = disp1.textContent.split(' ');
-    disp1.textContent = operate(calc[0], calc[2], calc[1]);
+    let output = operate(calc[0], calc[2], calc[1]);
+    calc.shift();
+    calc.shift();
+    calc.shift();
+
+    while (calc.length > 0){
+        output = operate(output, calc[1], calc[0]);
+        calc.shift();
+        calc.shift();
+    
+    }
+    
+
+    disp1.textContent = output;
 
 })
 equalsButton.addEventListener('mouseover', () => {
-    equalsButton.style.backgroundColor = 'red';
+    equalsButton.style.backgroundColor = 'rgb(233, 203, 68)';
 })
 equalsButton.addEventListener('mouseout', () => {
-    equalsButton.style.backgroundColor = 'green';
+    equalsButton.style.backgroundColor = 'orange';
 })
 
+
+ // Clear buttons
 let allClear = document.querySelector('#all-clear');
 allClear.addEventListener('click', () => {
     disp1.textContent = '';

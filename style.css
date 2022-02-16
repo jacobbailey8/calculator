@@ -2,12 +2,17 @@ body {
   margin: 0;
   background-color: rgba(99, 99, 99, 0.39);
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: flex-start;
   align-items: center;
   height: 100vh;
-  font-family: Georgia, "Times New Roman", Times, serif;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
 }
 
+h1 {
+  font-family: cursive;
+  font-size: 56px;
+}
 .entire-calculator {
   background-color: black;
   width: 400px;
@@ -19,18 +24,19 @@ body {
 
 .top-portion {
   height: 150px;
-  background-color: black;
+  background-color: rgb(0, 0, 0);
   display: flex;
   justify-content: center;
   align-items: center;
   flex-shrink: 1;
-  border-radius: 25px;
+  border-radius: 25px 25px 0px 0px;
+  margin-bottom: 12px;
 }
 
 .display {
   height: 100px;
   width: 350px;
-  background-color: rgb(194, 191, 191);
+  background-color: rgb(108, 161, 84);
   border-radius: 25px;
   display: flex;
   flex-direction: column;
@@ -52,18 +58,20 @@ body {
   height: 70px;
   font-size: 36px;
   border-radius: 50%;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
 }
 
 .equals-button {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: green;
+  background-color: orange;
   border: solid;
   height: 70px;
   width: 159px;
   font-size: 36px;
   border-radius: 25px;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
 }
 
 .content {
