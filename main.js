@@ -109,7 +109,7 @@ equalsButton.addEventListener('click', () => {
     }
     
 
-    disp1.textContent = output;
+    disp1.textContent = Math.round(output * 10000000000) / 10000000000;
 
 })
 equalsButton.addEventListener('mouseover', () => {
